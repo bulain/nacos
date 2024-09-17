@@ -135,9 +135,9 @@
                                 <keepDependenciesWithProvidedScope>false</keepDependenciesWithProvidedScope>
                                 <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
                                 <createDependencyReducedPom>false</createDependencyReducedPom>
-                                <minimizeJar>true</minimizeJar>
-                                <createSourcesJar>true</createSourcesJar>
-                                <shadeSourcesContent>true</shadeSourcesContent>
+                                <minimizeJar>false</minimizeJar>
+                                <createSourcesJar>false</createSourcesJar>
+                                <shadeSourcesContent>false</shadeSourcesContent>
 
                                 <filters>
                                     <filter>
