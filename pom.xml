@@ -137,11 +137,11 @@
         <log4j.version>2.17.1</log4j.version>
         
         <mysql-connector-java.version>8.2.0</mysql-connector-java.version>
-        <derby.version>10.14.2.0</derby.version>
+        <derby.version>10.17.1.0</derby.version>
         <jjwt.version>0.11.2</jjwt.version>
         <grpc-java.version>1.64.2</grpc-java.version>
         <proto-google-common-protos.version>2.17.0</proto-google-common-protos.version>
-        <protobuf-java.version>3.22.3</protobuf-java.version>
+        <protobuf-java.version>3.25.5</protobuf-java.version>
         <protoc-gen-grpc-java.version>${grpc-java.version}</protoc-gen-grpc-java.version>
         <hessian.version>4.0.63</hessian.version>
         <mockito.version>4.11.0</mockito.version>
@@ -150,6 +150,7 @@
         <rpc-grpc-impl.version>${jraft-core.version}</rpc-grpc-impl.version>
         <SnakeYaml.version>2.2</SnakeYaml.version>
         <junit5.version>5.10.2</junit5.version>
+        <json-path.version>2.9.0</json-path.version>
         
         <!-- override dependency version -->
         <spring.version>5.3.39</spring.version>
@@ -1065,6 +1066,12 @@
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
                 <version>${SnakeYaml.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${json-path.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
