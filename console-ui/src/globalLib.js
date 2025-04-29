@@ -555,10 +555,7 @@ const request = (function(_global) {
           const _errorcontent = responseJSON?.data ? ` : ${responseJSON.data}` : '';
           Message.error(responseJSON.message + _errorcontent);
         }
-        if (
-          [401, 403].includes(status) &&
-          ['unknown user!', 'token invalid!', 'token expired!'].includes(responseJSON.message)
-        ) {
+        if ([401, 403].includes(status) && (responseJSON.message || '').indexOf('401') >= 0) {
           goLogin();
         }
         return error;

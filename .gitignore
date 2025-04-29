@@ -4,6 +4,7 @@
 .settings
 target
 .idea
+.run
 .vscode
 .DS_Store
 .factorypath
