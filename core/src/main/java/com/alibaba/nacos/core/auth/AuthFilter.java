@@ -132,7 +132,7 @@ public class AuthFilter implements Filter {
                 Loggers.AUTH.debug("access denied, request: {} {}, reason: {}", req.getMethod(), req.getRequestURI(),
                         e.getErrMsg());
             }
-            resp.sendError(HttpServletResponse.SC_FORBIDDEN, e.getErrMsg());
+            resp.sendError(HttpServletResponse.SC_FORBIDDEN, String.format("Code: 401, %s", e.getErrMsg()));
         } catch (IllegalArgumentException e) {
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST, ExceptionUtil.getAllExceptionMsg(e));
         } catch (Exception e) {
