@@ -129,15 +129,15 @@
         
         <!-- dependency version -->
         <nacos.logback.adapter.version>1.1.4</nacos.logback.adapter.version>
-        <spring-boot-dependencies.version>3.4.9</spring-boot-dependencies.version>
+        <spring-boot-dependencies.version>3.4.11</spring-boot-dependencies.version>
         <commons-io.version>2.14.0</commons-io.version>
         <commons-collections.version>3.2.2</commons-collections.version>
         <slf4j-api.version>2.0.13</slf4j-api.version>
-        <logback.version>1.5.12</logback.version>
+        <logback.version>1.5.19</logback.version>
         <log4j.version>2.24.3</log4j.version>
         
         <mysql-connector-java.version>8.2.0</mysql-connector-java.version>
-        <derby.version>10.14.2.0</derby.version>
+        <derby.version>10.17.1.0</derby.version>
         <jjwt.version>0.11.2</jjwt.version>
         <grpc-java.version>1.75.0</grpc-java.version>
         <proto-google-common-protos.version>2.17.0</proto-google-common-protos.version>
@@ -1159,6 +1159,19 @@
                 <artifactId>client-java</artifactId>
                 <version>${kubernetes.client.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.18.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alipay.sofa</groupId>
+                <artifactId>hessian</artifactId>
+                <version>3.5.5</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
